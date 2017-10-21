@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="A"
+        android:background="@drawable/circle_shape"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:id="@+id/circleTextView"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/blank"
+        android:layout_alignParentRight="true"
+        android:text="TIME" />
+    <EditText
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/circleTextView"
+        android:text="ToDo Title"
+        android:layout_toLeftOf="@id/timeTextView"
+        android:background="@drawable/blank"
+        android:textColor="#000"
+        android:layout_margin="2dp"
+        android:textSize="20sp" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_below="@id/titleTextView"
+        android:layout_alignParentRight="true"
+        >
+        <ImageView
+            android:id="@+id/editbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/edit" />
+        <ImageView
+            android:id="@+id/deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/delete" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/blank"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/circleTextView"
+        android:layout_toLeftOf="@id/linear"
+        android:layout_below="@id/titleTextView"
+        android:text="DATE"
+
+        />
+</RelativeLayout>
